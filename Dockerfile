@@ -7,6 +7,7 @@ ENV LD_LIBRARY_PATH=$ORACLE_HOME/lib
 ENV PATH=$ORACLE_HOME/bin:$PATH
 ENV ORACLE_SID=XE
 ENV TZ=America/Montevideo
+ENV NLS_LANG=AMERICAN_AMERICA.WE8MSWIN1252
 
 ADD oracle-xe-universal_10.2.0.1-1.1_i386.debaa /
 ADD oracle-xe-universal_10.2.0.1-1.1_i386.debab /
@@ -51,7 +52,7 @@ CMD sed -i -E "s/HOST = [^)]+/HOST = $HOSTNAME/g" /usr/lib/oracle/xe/app/oracle/
     echo "ALTER SYSTEM SET JOB_QUEUE_PROCESSES=0;" | sqlplus -s SYS/oracle as sysdba; \
     echo "ALTER SYSTEM SET AQ_TM_PROCESSES=0;" | sqlplus -s SYS/oracle as sysdba; \
     echo "ALTER DATABASE OPEN;" | sqlplus -s SYS/oracle as sysdba; \
-    echo "ALTER DATABASE CHARACTER SET INTERNAL_USE WE8ISO8859P1;" | sqlplus -s SYS/oracle as sysdba; \
+    echo "ALTER DATABASE CHARACTER SET INTERNAL_USE WE8MSWIN1252;" | sqlplus -s SYS/oracle as sysdba; \
     echo "SHUTDOWN IMMEDIATE;" | sqlplus -s SYS/oracle as sysdba; \
     echo "STARTUP;" | sqlplus -s SYS/oracle as sysdba; \
     /usr/sbin/sshd -D
