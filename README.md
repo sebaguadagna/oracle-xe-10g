@@ -8,8 +8,7 @@ sebaguadagna/oracle-xe-10g
 
 
 ### Installation
-Last release version-1.4
-Replace tagname with release name
+Last release version-1.4, replace tagname with release name
 ```
 docker pull sebastianguadagna/ora10gxe:tagname
 ```
