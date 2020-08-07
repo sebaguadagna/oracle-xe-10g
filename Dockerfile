@@ -50,7 +50,7 @@ CMD sed -i -E "s/HOST = [^)]+/HOST = $HOSTNAME/g" /usr/lib/oracle/xe/app/oracle/
     echo "ALTER SYSTEM SET JOB_QUEUE_PROCESSES=0;" | sqlplus -s SYS/oracle as sysdba; \
     echo "ALTER SYSTEM SET AQ_TM_PROCESSES=0;" | sqlplus -s SYS/oracle as sysdba; \
     echo "ALTER DATABASE OPEN;" | sqlplus -s SYS/oracle as sysdba; \
-    echo "ALTER DATABASE CHARACTER SET INTERNAL_USE ZHS16GBK;" | sqlplus -s SYS/oracle as sysdba; \
+    echo "ALTER DATABASE CHARACTER SET INTERNAL_USE WE8ISO8859P1;" | sqlplus -s SYS/oracle as sysdba; \
     echo "SHUTDOWN IMMEDIATE;" | sqlplus -s SYS/oracle as sysdba; \
     echo "STARTUP;" | sqlplus -s SYS/oracle as sysdba; \
     /usr/sbin/sshd -D
