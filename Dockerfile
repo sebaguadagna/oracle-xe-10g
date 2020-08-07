@@ -6,7 +6,7 @@ ENV ORACLE_HOME=/usr/lib/oracle/xe/app/oracle/product/10.2.0/server
 ENV LD_LIBRARY_PATH=$ORACLE_HOME/lib
 ENV PATH=$ORACLE_HOME/bin:$PATH
 ENV ORACLE_SID=XE
-ENV TZ=Asia/Shanghai
+ENV TZ=America/Montevideo
 
 ADD oracle-xe-universal_10.2.0.1-1.1_i386.debaa /
 ADD oracle-xe-universal_10.2.0.1-1.1_i386.debab /
