@@ -11,7 +11,7 @@ sebaguadagna/oracle-xe-10g
 Last release version-1.4
 Replace tagname with release name
 ```
-docker push sebastianguadagna/ora10gxe:tagname
+docker pull sebastianguadagna/ora10gxe:tagname
 ```
 
 
