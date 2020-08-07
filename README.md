@@ -1,7 +1,7 @@
 sebaguadagna/oracle-xe-10g 
 ====================
 
-* Oracle Express Edition 10g Release 2 (10.2.0.1) 32-bit on Debian 7.0 Wheezy.
+* Oracle Express Edition 10g Release 2 (10.2.0.1) 32-bit on Debian 8.0 Jessie.
 * Forked from dragonbest520/oracle-xe-10g
 
 **The default characterset is WE8ISO8859P1 and timezone is America/Montevideo.**
