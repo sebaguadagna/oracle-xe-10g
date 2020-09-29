@@ -8,7 +8,7 @@ sebaguadagna/oracle-xe-10g
 
 
 ### Installation
-Last release version-1.4, replace tagname with release name
+Last release version-1.5, replace tagname with release name
 ```
 docker pull sebastianguadagna/ora10gxe:tagname
 ```
@@ -16,7 +16,7 @@ docker pull sebastianguadagna/ora10gxe:tagname
 
 Run with 22, 1521, 8080 ports opened and volume mounted:
 ```
-docker run --name oracle10g -d -p 49160:22 -p 1521:1521 -p 49162:8080 --mount source=oracle_xe_10g_vol,target=/usr/lib/oracle -e ORACLE_ALLOW_REMOTE=true --restart=always sebastianguadagna/ora10gxe:version-1.4
+docker run --name oracle10g -d -p 49160:22 -p 1521:1521 -p 49162:8080 --mount source=oracle_xe_10g_vol,target=/usr/lib/oracle -e ORACLE_ALLOW_REMOTE=true --restart=always sebastianguadagna/ora10gxe:version-1.5
 ```
 
 The volume path on server is /var/lib/docker/volumes/oracle_xe_10g_vol
